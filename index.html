@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monika Markam | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111827;
+      padding: 18px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #38bdf8;
+    }
+
+    .about p {
+      max-width: 800px;
+      color: #cbd5e1;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 10px 16px;
+      border-radius: 20px;
+      color: #e2e8f0;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .project h3 {
+      color: #f8fafc;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #94a3b8;
+      margin-bottom: 15px;
+    }
+
+    .project a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <div class="hero">
+      <h1>Hi, I'm <span>Monika Markam</span></h1>
+      <h2>BCA (AI/ML) Student | Aspiring Software Developer</h2>
+
+      <p>
+        I'm a BCA student interested in Artificial Intelligence,
+        Machine Learning, Web Development and Software Development.
+        I enjoy learning new technologies and building practical projects.
+      </p>
+
+      <a class="btn" href="#projects">View My Projects</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am currently pursuing BCA in Artificial Intelligence and Machine
+      Learning at Rungta International Skills University. I am developing
+      my programming and web development skills through academic learning,
+      certifications and practical projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div class="skill">Java</div>
+      <div class="skill">C</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">MS Office</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Parking Lot Management System</h3>
+        <p>
+          A web application to manage parking slots, vehicles
+          and billing. Users can add vehicles, check available
+          slots and calculate parking charges.
+        </p>
+
+        <a href="https://github.com/markammonika56-spec/parking-lot-management-system"
+           target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>Student Attendance Management System</h3>
+        <p>
+          A web-based system to add students, mark attendance,
+          search student records and calculate attendance percentage.
+        </p>
+
+        <a href="https://github.com/markammonika56-spec/students-attendance-management-system-"
+           target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>Smart Student Result Analyzer</h3>
+        <p>
+          A web-based student result analyzer built using HTML,
+          CSS and JavaScript.
+        </p>
+
+        <a href="https://github.com/markammonika56-spec/smart-student-result-analyzer"
+           target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>📧 Email: markammonika56@gmail.com</p>
+    <p>📱 Phone: 7805031994</p>
+
+    <p>
+      🔗 LinkedIn:
+      <a href="https://www.linkedin.com/in/monika-markam56"
+         target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
+
+    <p>
+      💻 GitHub:
+      <a href="https://github.com/markammonika56-spec"
+         target="_blank">
+        GitHub Profile
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Monika Markam | Personal Portfolio
+  </footer>
+
+</body>
+  </html>
